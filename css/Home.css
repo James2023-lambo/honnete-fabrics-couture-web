@@ -1,0 +1,84 @@
+#home {
+    background: linear-gradient(to right, #ffdde1, #fbd4f1);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+} 
+
+.home-hero {
+    background-color: white;
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    max-width: 800px;
+    animation: fadein 2s ease-in-out;
+}
+
+#home h1 {
+    font-size: 3em;
+    color: #d12a7a;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#home p {
+    font-size: 1.3em;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.home-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #d12a7a;
+    color: white;
+    font-size: 1em;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+
+.home-btn:hover {
+    background-color: #a91f60;
+}
+
+.intro, .features {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.intro h2, .featuresh2 {
+    color: #d12a7a;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.intro p, .features ul {
+    color: #555;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features ul li {
+    background-color: #ffe2f1;
+    margin: 10px auto;
+    padding: 12px;
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+@keyframes fadein {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+}
